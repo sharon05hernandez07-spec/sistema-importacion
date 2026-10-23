@@ -1,0 +1,21 @@
+services:
+  postgres:
+    image: postgres:17
+    container_name: importacion-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: sistema_importacion
+      POSTGRES_USER: importador
+      POSTGRES_PASSWORD: ImportacionLocal2026
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U importador -d sistema_importacion"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  postgres_data:

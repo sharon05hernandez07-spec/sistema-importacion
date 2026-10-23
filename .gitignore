@@ -1,0 +1,14 @@
+# Respaldos de la base de datos
+respaldos/*.dump
+respaldos/cron.log
+
+# Copias temporales de documentos
+docs/*.bak
+
+# Variables de entorno y secretos
+.env
+.env.*
+!.env.example
+
+# Archivos temporales
+*.log
