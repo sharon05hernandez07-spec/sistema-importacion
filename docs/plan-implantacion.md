@@ -20,11 +20,11 @@ El proyecto consiste en desarrollar un sistema de gestión para una empresa de i
 |---|---|---|---|
 | React | Construir la interfaz de usuario | 19.3.x, propuesta | Licencia MIT, sin costo de licencia |
 | Node.js | Ejecutar el backend | 24.x LTS, propuesta | Licencia MIT, sin costo de licencia |
-| Express | Crear la API del sistema | 5.3.x, propuesta | Licencia MIT, sin costo de licencia |
+| Express | Crear la API del sistema | 5.x, propuesta | Licencia MIT, sin costo de licencia |
 | MySQL Community Server | Almacenar la información | 8.4 LTS, propuesta | GPLv2 con condiciones adicionales; revisar componentes y condiciones de distribución |
 | Git | Controlar versiones del código | 2.x, propuesta | GPL-2.0, sin costo de licencia |
-| GitHub | Alojar el repositorio del proyecto | Servicio en línea | Plan y condiciones por verificar |
-| Docker Engine | Facilitar el despliegue, si se utiliza | 29.x, propuesta | Licencia según los componentes utilizados; revisar condiciones oficiales |
+| GitHub | Alojar el repositorio del proyecto | Servicio en línea | Plan Free: sin costo para las funciones incluidas; funciones adicionales sujetas a condiciones y cobros |
+| Docker Engine | Facilitar el despliegue, si se utiliza | 29.x, propuesta | Apache License 2.0 para Docker Engine; revisar por separado los demás componentes |
 | Ubuntu Server | Ejecutar la aplicación | 26.04 LTS, propuesta | Software libre y de código abierto; soporte estándar hasta mayo de 2031 |
 
 
