@@ -73,21 +73,21 @@ La plataforma se seleccionará cuando se definan las tecnologías, la cantidad d
 
 ### 1.7. Verificación de requisitos
 
-| Campo | Resultado |
-|---|---|
-| Script de verificación | `scripts/verificar-requisitos.sh` |
-| Entorno de prueba | Ubuntu 26.04 en WSL2 |
-| Procesadores | 4 — CUMPLE |
-| Memoria RAM | 3859 MB — CUMPLE |
-| Disco libre | 955 GB — CUMPLE |
-| Arquitectura | x86_64 — CUMPLE |
-| Sistema operativo | Ubuntu 26.04 — CUMPLE según el umbral configurado |
-| Docker | No instalado — NO CUMPLE |
-| Node.js | No instalado — NO CUMPLE |
-| Puerto 80 | Libre — CUMPLE |
-| Puerto 443 | Libre — CUMPLE |
-| Resultado general | 2 requisitos no se cumplen |
+REQUISITO          ESPERADO               ENCONTRADO             ESTADO
+------------------------------------------------------------------------
+Procesadores       >= 2                   4                      CUMPLE
+RAM (MB)           >= 4096                3859                   NO CUMPLE
+Disco libre (GB)   >= 20 en /             955                    CUMPLE
+Arquitectura       x86_64 aarch64         x86_64                 CUMPLE
+Sistema operativo  ubuntu >= 22.04        ubuntu 26.04           CUMPLE
+Docker             >= 24.0                no instalado           NO CUMPLE
+Node.js            >= 20.0                no instalado           NO CUMPLE
+Puerto 80          libre                  libre                  CUMPLE
+Puerto 443          libre                  libre                  CUMPLE
 
+RESULTADO: 3 requisito(s) no se cumplen.
+
+La verificación se realizó en el entorno de desarrollo Ubuntu mediante WSL2. Se identificaron tres requisitos pendientes: la RAM disponible es inferior a los 4 GB mínimos definidos, y Node.js y Docker no están instalados. Estos resultados corresponden al entorno de desarrollo y deberán revisarse antes de desplegar el sistema en el servidor definitivo.
 ### Salida real del script
 
 ```text
