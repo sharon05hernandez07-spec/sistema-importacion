@@ -128,3 +128,20 @@ Se establecerán las actividades de mantenimiento, la atención de incidentes y 
 ## 10. Aceptación y entrega — Semana 9
 
 Se documentarán las pruebas finales, los resultados de aceptación y la entrega del sistema.
+
+### Salida real del script
+```text
+REQUISITO          ESPERADO               ENCONTRADO             ESTADO
+------------------------------------------------------------------------
+Procesadores       >= 1                   4                      CUMPLE
+RAM (MB)           >= 1024                3859                   CUMPLE
+Disco libre (GB)   >= 10 en /             955                    CUMPLE
+Arquitectura       x86_64 aarch64         x86_64                 CUMPLE
+Sistema operativo  ubuntu >= 22.04        ubuntu 26.04           CUMPLE
+Docker             >= 24.0                no instalado           NO CUMPLE
+Node.js            >= 20.0                no instalado           NO CUMPLE
+Puerto 80          libre                  libre                  CUMPLE
+Puerto 443          libre                  libre                  CUMPLE
+
+RESULTADO: 2 requisito(s) no se cumplen.
+```
