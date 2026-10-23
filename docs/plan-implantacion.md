@@ -73,40 +73,20 @@ La plataforma se seleccionará cuando se definan las tecnologías, la cantidad d
 
 ### 1.7. Verificación de requisitos
 
-REQUISITO          ESPERADO               ENCONTRADO             ESTADO
-------------------------------------------------------------------------
-Procesadores       >= 2                   4                      CUMPLE
-RAM (MB)           >= 4096                3859                   NO CUMPLE
-Disco libre (GB)   >= 20 en /             955                    CUMPLE
-Arquitectura       x86_64 aarch64         x86_64                 CUMPLE
-Sistema operativo  ubuntu >= 22.04        ubuntu 26.04           CUMPLE
-Docker             >= 24.0                no instalado           NO CUMPLE
-Node.js            >= 20.0                no instalado           NO CUMPLE
-Puerto 80          libre                  libre                  CUMPLE
-Puerto 443          libre                  libre                  CUMPLE
+| REQUISITO | ESPERADO | ENCONTRADO | ESTADO |
+|---|---|---|---|
+| Procesadores | >= 2 | 4 | CUMPLE |
+| RAM (MB) | >= 4096 | 3859 | NO CUMPLE |
+| Disco libre (GB) | >= 20 en / | 955 | CUMPLE |
+| Arquitectura | x86_64 o aarch64 | x86_64 | CUMPLE |
+| Sistema operativo | Ubuntu >= 22.04 | Ubuntu 26.04 | CUMPLE |
+| Docker | >= 24.0 | No instalado | NO CUMPLE |
+| Node.js | >= 20.0 | No instalado | NO CUMPLE |
+| Puerto 80 | Libre | Libre | CUMPLE |
+| Puerto 443 | Libre | Libre | CUMPLE |
 
-RESULTADO: 3 requisito(s) no se cumplen.
-
+**RESULTADO:** 3 requisito(s) no se cumplen.
 La verificación se realizó en el entorno de desarrollo Ubuntu mediante WSL2. Se identificaron tres requisitos pendientes: la RAM disponible es inferior a los 4 GB mínimos definidos, y Node.js y Docker no están instalados. Estos resultados corresponden al entorno de desarrollo y deberán revisarse antes de desplegar el sistema en el servidor definitivo.
-### Salida real del script
-
-```text
-REQUISITO          ESPERADO               ENCONTRADO             ESTADO
-------------------------------------------------------------------------
-Procesadores       >= 1                   4                      CUMPLE
-RAM (MB)           >= 1024                3859                   CUMPLE
-Disco libre (GB)   >= 10 en /             955                    CUMPLE
-Arquitectura       x86_64 aarch64         x86_64                 CUMPLE
-Sistema operativo  ubuntu >= 22.04        ubuntu 26.04           CUMPLE
-Docker             >= 24.0                no instalado           NO CUMPLE
-Node.js            >= 20.0                no instalado           NO CUMPLE
-Puerto 80          libre                  libre                  CUMPLE
-Puerto 443          libre                  libre                  CUMPLE
-
-RESULTADO: 2 requisito(s) no se cumplen.
-```
-
-**Observación:** la prueba se realizó en el entorno de desarrollo Ubuntu mediante WSL2. Los resultados no representan todavía una evaluación de un servidor definitivo. La ausencia de Docker y Node.js deberá revisarse cuando se defina la arquitectura del sistema y se confirme si estas herramientas son necesarias.
 
 ---
 
