@@ -19,11 +19,15 @@ El proyecto consiste en desarrollar un sistema de gestión para una empresa de i
 
 | Componente | Función | Versión | Licencia y costo |
 |---|---|---|---|
-| Sistema operativo del servidor | Ejecutar los servicios del sistema | Por definir | Por verificar |
-| Lenguaje y entorno de ejecución | Ejecutar la aplicación | Por definir | Por verificar |
-| Base de datos | Guardar la información | Por definir | Por verificar |
-| Servidor web | Permitir el acceso a la aplicación, si se requiere | Por definir | Por verificar |
-| Herramientas de despliegue | Instalar y ejecutar los servicios | Por definir | Por verificar |
+| React | Construir la interfaz de usuario | Por definir | Licencia MIT, sin costo de licencia |
+| Node.js | Ejecutar el backend | Por definir | Licencia MIT, sin costo de licencia |
+| Express | Crear la API del sistema | Por definir | Licencia MIT, sin costo de licencia |
+| MySQL Community Server | Almacenar la información | Por definir | Licencia y condiciones por verificar según la edición elegida |
+| Git | Controlar versiones del código | Por definir | Licencia GPL-2.0, sin costo de licencia |
+| GitHub | Alojar el repositorio del proyecto | Servicio en línea | Plan y condiciones por verificar |
+| Docker | Facilitar el despliegue de los servicios, si se utiliza | Por definir | Depende de la edición y componentes utilizados |
+| Sistema operativo del servidor | Ejecutar la aplicación | Por definir | Depende del sistema seleccionado |
+
 
 ### 1.3. Sistema operativo del servidor
 
