@@ -88,6 +88,24 @@ La plataforma se seleccionará cuando se definan las tecnologías, la cantidad d
 | Puerto 443 | Libre — CUMPLE |
 | Resultado general | 2 requisitos no se cumplen |
 
+### Salida real del script
+
+```text
+REQUISITO          ESPERADO               ENCONTRADO             ESTADO
+------------------------------------------------------------------------
+Procesadores       >= 1                   4                      CUMPLE
+RAM (MB)           >= 1024                3859                   CUMPLE
+Disco libre (GB)   >= 10 en /             955                    CUMPLE
+Arquitectura       x86_64 aarch64         x86_64                 CUMPLE
+Sistema operativo  ubuntu >= 22.04        ubuntu 26.04           CUMPLE
+Docker             >= 24.0                no instalado           NO CUMPLE
+Node.js            >= 20.0                no instalado           NO CUMPLE
+Puerto 80          libre                  libre                  CUMPLE
+Puerto 443          libre                  libre                  CUMPLE
+
+RESULTADO: 2 requisito(s) no se cumplen.
+```
+
 **Observación:** la prueba se realizó en el entorno de desarrollo Ubuntu mediante WSL2. Los resultados no representan todavía una evaluación de un servidor definitivo. La ausencia de Docker y Node.js deberá revisarse cuando se defina la arquitectura del sistema y se confirme si estas herramientas son necesarias.
 
 ---
