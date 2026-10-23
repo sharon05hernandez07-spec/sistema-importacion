@@ -33,12 +33,12 @@ El proyecto consiste en desarrollar un sistema de gestión para una empresa de i
 
 | Característica | Descripción |
 |---|---|
-| Distribución y versión | Pendiente de selección |
-| Arquitectura | 64 bits, por confirmar |
-| Fin del soporte | Pendiente de consultar en la página oficial |
-| Licencia | Pendiente de verificar |
-| Requisitos mínimos oficiales | Pendiente de consultar según el sistema operativo elegido |
-
+| Distribución y versión | Ubuntu Server 26.04 LTS, propuesta por confirmar |
+| Arquitectura | 64 bits |
+| Fin del soporte | Consultar la fecha oficial correspondiente a la versión seleccionada |
+| Licencia | Sistema operativo de código abierto, sin costo de licencia |
+| Requisitos mínimos oficiales | Consultar la documentación oficial de Ubuntu Server para la versión seleccionada |
+| Justificación | Es compatible con Node.js, Express y MySQL y permite alojar los servicios del sistema de importación. |
 ### 1.4. Consumo de recursos
 
 Las mediciones se realizarán cuando se defina y ejecute la aplicación. Por ahora no existen mediciones reales del consumo del sistema.
@@ -52,19 +52,22 @@ Las mediciones se realizarán cuando se defina y ejecute la aplicación. Por aho
 
 ### 1.5. Matriz de requisitos
 
-| Recurso | Requisito mínimo | Requisito recomendado |
+| Recurso | Requisito mínimo estimado | Requisito recomendado estimado |
 |---|---|---|
-| CPU | Pendiente de medir y validar | Según medición y margen adicional |
-| Memoria RAM | Pendiente de medir | Consumo medido más 30–50 % |
-| Disco | Pendiente de estimar según aplicación y datos | Espacio adicional para crecimiento y respaldos |
-| Red | Conectividad requerida por los usuarios y servicios | Conexión estable según la cantidad de usuarios |
-| Arquitectura | Por confirmar | Compatible con las tecnologías seleccionadas |
-| Sistema operativo | Por seleccionar | Versión con soporte vigente |
-| Contenedores y entorno de ejecución | Según la arquitectura final | Versiones compatibles y documentadas |
-| Puertos de red | Por definir según los servicios | Abrir únicamente los necesarios |
+| CPU | 2 núcleos | 2 núcleos |
+| Memoria RAM | 4 GB | 6 GB (4 GB + 50 % = 6 GB) |
+| Disco | 20 GB disponibles | 40 GB disponibles para aplicación, base de datos y crecimiento inicial |
+| Red | Conexión de red y acceso a los puertos necesarios | Conexión estable y segura según la cantidad de usuarios |
+| Arquitectura | x86_64 de 64 bits | x86_64 de 64 bits |
+| Sistema operativo | Ubuntu Server LTS de 64 bits | Ubuntu Server LTS con soporte vigente |
+| Entorno de ejecución | Node.js y servicios necesarios, versiones por definir | Versiones compatibles y documentadas |
+| Base de datos | MySQL Community Server, versión por definir | MySQL con respaldo y espacio para crecimiento |
+| Contenedores | Docker, solo si se adopta para el despliegue | Docker con versión compatible, si se utiliza |
+| Puertos de red | Solo los necesarios para la aplicación y la administración | Acceso restringido mediante reglas de seguridad |
 
-El requisito recomendado de memoria RAM se calculará a partir del consumo medido, agregando un margen del 30 al 50 %. El almacenamiento se estimará considerando la base de datos, los documentos y el crecimiento esperado.
+**Cálculo del margen de memoria:** se estima un mínimo inicial de 4 GB. Para la recomendación se agrega un margen del 50 %: 4 GB × 1,5 = 6 GB.
 
+**Nota:** estos valores son estimaciones iniciales para planificar el servidor. Se deben validar cuando la aplicación esté desarrollada y se pueda medir su consumo real. El almacenamiento se ajustará según el volumen de documentos y registros que maneje la empresa.
 ### 1.6. Recomendación de plataforma física
 
 La plataforma se seleccionará cuando se definan las tecnologías, la cantidad de usuarios y el consumo de recursos. Se evaluará el uso de un servidor virtual o de servicios en la nube para facilitar la instalación y el mantenimiento. Si se elige un servidor físico que aloje la base de datos, se revisará la conveniencia de utilizar RAID y un sistema de respaldo independiente.
