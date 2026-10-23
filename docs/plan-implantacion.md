@@ -19,14 +19,14 @@ El proyecto consiste en desarrollar un sistema de gestión para una empresa de i
 
 | Componente | Función | Versión | Licencia y costo |
 |---|---|---|---|
-| React | Construir la interfaz de usuario | Por definir | Licencia MIT, sin costo de licencia |
-| Node.js | Ejecutar el backend | Por definir | Licencia MIT, sin costo de licencia |
-| Express | Crear la API del sistema | Por definir | Licencia MIT, sin costo de licencia |
-| MySQL Community Server | Almacenar la información | Por definir | Licencia y condiciones por verificar según la edición elegida |
-| Git | Controlar versiones del código | Por definir | Licencia GPL-2.0, sin costo de licencia |
+| React | Construir la interfaz de usuario | 19.3.x, propuesta | Licencia MIT, sin costo de licencia |
+| Node.js | Ejecutar el backend | 24.x LTS, propuesta | Licencia MIT, sin costo de licencia |
+| Express | Crear la API del sistema | 5.3.x, propuesta | Licencia MIT, sin costo de licencia |
+| MySQL Community Server | Almacenar la información | 8.4 LTS, propuesta | GPLv2 con condiciones adicionales; revisar componentes y condiciones de distribución |
+| Git | Controlar versiones del código | 2.x, propuesta | GPL-2.0, sin costo de licencia |
 | GitHub | Alojar el repositorio del proyecto | Servicio en línea | Plan y condiciones por verificar |
-| Docker | Facilitar el despliegue de los servicios, si se utiliza | Por definir | Depende de la edición y componentes utilizados |
-| Sistema operativo del servidor | Ejecutar la aplicación | Por definir | Depende del sistema seleccionado |
+| Docker Engine | Facilitar el despliegue, si se utiliza | 29.x, propuesta | Licencia según los componentes utilizados; revisar condiciones oficiales |
+| Ubuntu Server | Ejecutar la aplicación | 26.04 LTS, propuesta | Software libre y de código abierto; soporte estándar hasta mayo de 2031 |
 
 
 ### 1.3. Sistema operativo del servidor
@@ -35,9 +35,9 @@ El proyecto consiste en desarrollar un sistema de gestión para una empresa de i
 |---|---|
 | Distribución y versión | Ubuntu Server 26.04 LTS, propuesta por confirmar |
 | Arquitectura | 64 bits |
-| Fin del soporte | Consultar la fecha oficial correspondiente a la versión seleccionada |
+| Fin del soporte estándar | Mayo de 2031, según el ciclo oficial de Ubuntu 26.04 LTS |
 | Licencia | Sistema operativo de código abierto, sin costo de licencia |
-| Requisitos mínimos oficiales | Consultar la documentación oficial de Ubuntu Server para la versión seleccionada |
+| Requisitos oficiales | Consultar la documentación de Ubuntu Server 26.04 LTS antes de instalar el servidor |
 | Justificación | Es compatible con Node.js, Express y MySQL y permite alojar los servicios del sistema de importación. |
 ### 1.4. Consumo de recursos
 
@@ -60,9 +60,9 @@ Las mediciones se realizarán cuando se defina y ejecute la aplicación. Por aho
 | Red | Conexión de red y acceso a los puertos necesarios | Conexión estable y segura según la cantidad de usuarios |
 | Arquitectura | x86_64 de 64 bits | x86_64 de 64 bits |
 | Sistema operativo | Ubuntu Server LTS de 64 bits | Ubuntu Server LTS con soporte vigente |
-| Entorno de ejecución | Node.js y servicios necesarios, versiones por definir | Versiones compatibles y documentadas |
-| Base de datos | MySQL Community Server, versión por definir | MySQL con respaldo y espacio para crecimiento |
-| Contenedores | Docker, solo si se adopta para el despliegue | Docker con versión compatible, si se utiliza |
+| Entorno de ejecución | Node.js 24.x LTS y dependencias necesarias | Node.js 24.x LTS actualizado y dependencias compatibles |
+| Base de datos | MySQL Community Server 8.4 LTS | MySQL 8.4 LTS actualizado, con respaldo y espacio para crecimiento |
+| Contenedores | Docker Engine 29.x, solo si se adopta | Docker Engine actualizado, si se utiliza |
 | Puertos de red | Solo los necesarios para la aplicación y la administración | Acceso restringido mediante reglas de seguridad |
 
 **Cálculo del margen de memoria:** se estima un mínimo inicial de 4 GB. Para la recomendación se agrega un margen del 50 %: 4 GB × 1,5 = 6 GB.
