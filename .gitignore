@@ -12,3 +12,8 @@ docs/*.bak
 
 # Archivos temporales
 *.log
+# Archivos generados y copias de respaldo
+frontend/dist/
+backend/server.js.bak
+# Dependencias de Node.js
+node_modules/
