@@ -71,7 +71,9 @@ Las mediciones se realizarán cuando se defina y ejecute la aplicación. Por aho
 
 La plataforma se seleccionará cuando se definan las tecnologías, la cantidad de usuarios y el consumo de recursos. Se evaluará el uso de un servidor virtual o de servicios en la nube para facilitar la instalación y el mantenimiento. Si se elige un servidor físico que aloje la base de datos, se revisará la conveniencia de utilizar RAID y un sistema de respaldo independiente.
 
-### 1.7. Verificación de requisitos
+###### 1.7. Verificación de requisitos
+
+La siguiente tabla resume los resultados de la verificación del entorno de desarrollo mediante Ubuntu en WSL2.
 
 | REQUISITO | ESPERADO | ENCONTRADO | ESTADO |
 |---|---|---|---|
@@ -85,8 +87,11 @@ La plataforma se seleccionará cuando se definan las tecnologías, la cantidad d
 | Puerto 80 | Libre | Libre | CUMPLE |
 | Puerto 443 | Libre | Libre | CUMPLE |
 
-**RESULTADO:** 3 requisito(s) no se cumplen.
-La verificación se realizó en el entorno de desarrollo Ubuntu mediante WSL2. Se identificaron tres requisitos pendientes: la RAM disponible es inferior a los 4 GB mínimos definidos, y Node.js y Docker no están instalados. Estos resultados corresponden al entorno de desarrollo y deberán revisarse antes de desplegar el sistema en el servidor definitivo.
+**RESULTADO:** 3 requisitos no se cumplen.
+
+**Observación:** la RAM disponible es inferior al mínimo establecido y Docker y Node.js no están instalados en este entorno. Estos resultados corresponden al entorno de desarrollo WSL2 y deberán revisarse antes del despliegue definitivo.
+
+**Evidencia:** la salida real del script de verificación debe incorporarse aquí en un bloque de código, utilizando la ejecución con los requisitos definidos para la matriz.
 
 ---
 
